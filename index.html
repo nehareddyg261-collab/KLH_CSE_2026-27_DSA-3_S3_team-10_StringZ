@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StringZ – Word Search</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><div class="bar"><div class="logo">String<i>Z</i></div>
+<div role="tablist"><button class="tab" role="tab" id="t1" aria-selected="true">Search</button><button class="tab" role="tab" id="t2" aria-selected="false">Compare</button></div></div></header>
+<main>
+<section class="panel" id="p1">
+<div class="card"><div class="row"><div><label for="file">Text file</label><input type="file" id="file" accept=".txt,.log,.csv,.md,.fa,.fasta,.json,text/*"></div>
+<div><label for="word">Word to search</label><input type="text" id="word" placeholder="Enter a word"></div></div>
+<label class="chk"><input type="checkbox" id="mc"> Match case</label>
+<button class="go" id="run">Search</button><p class="note" id="msg"></p></div>
+<div id="res"></div></section>
+
+<section class="panel" id="p2" hidden><div id="cmp"><div class="card empty">Run a search first to see the comparison.</div></div></section>
+</main>
+<script src="js/algorithms.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
